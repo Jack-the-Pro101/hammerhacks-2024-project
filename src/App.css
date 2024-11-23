@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+:root {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --clr-neutral-100: hsl(240, 4%, 10%);
+  --clr-neutral-200: hsl(240, 4%, 20%);
+  --clr-neutral-300: hsl(240, 4%, 30%);
+  --clr-neutral-400: hsl(240, 4%, 40%);
+  --clr-neutral-500: hsl(240, 4%, 50%);
+  --clr-neutral-600: hsl(240, 4%, 60%);
+  --clr-neutral-700: hsl(240, 4%, 70%);
+  --clr-neutral-800: hsl(240, 4%, 80%);
+  --clr-neutral-900: hsl(240, 4%, 90%);
+
+  --clr-primary-100: hsl(214, 100%, 15%);
+  --clr-primary-200: hsl(214, 100%, 25%);
+  --clr-primary-300: hsl(214, 100%, 35%);
+  --clr-primary-400: hsl(214, 100%, 45%);
+  --clr-primary-500: hsl(214, 100%, 55%);
+  --clr-primary-600: hsl(214, 100%, 65%);
+  --clr-primary-700: hsl(214, 100%, 75%);
+  --clr-primary-800: hsl(214, 100%, 85%);
+  --clr-primary-900: hsl(214, 100%, 95%);
+
+  --clr-ok: #25f4a8;
+}
+
+body {
+  background-color: white;
+  color: var(--clr-neutral-100);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 100vh;
+  padding-top: 4em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    background-color: #2f2f2f;
+  }
+}
